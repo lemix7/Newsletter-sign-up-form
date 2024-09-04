@@ -16,7 +16,7 @@ A simple, responsive newsletter signup form created using HTML, CSS, and JavaScr
 
 ## Live Demo
 
-Check out the live demo [here](https://yourliveurl.com).
+Check out the live demo [here](https://newsletter-signup-form-lemix.netlify.app/).
 
 ## Contributing
 
