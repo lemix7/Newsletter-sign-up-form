@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family:  Helvetica, sans-serif;
+    height: 100vh;
+    background-color: hsl(179, 81%, 29%);
+    background-color: white;
+    display: flex;
+}
+
+.container-1{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    width: 100%;
+    /* height: 100%; */
+    color: #252646;
+    overflow: hidden;
+}
+
+.container-1 .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    order: 2;
+    padding: 2.5rem;
+}
+
+.content h1{
+    font-size: clamp(3.5rem, 5vw, 5rem);
+    margin-bottom: 3rem;
+}
+
+.descripation{
+    font-size: 1.8rem;
+}
+
+
+.features{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 3rem 0;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.features p{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.features p svg {
+    width: 23px;
+    height: 23px;
+}
+
+.container-1 .image{
+    background-image: url(Modern\ Minimalist\ Workspace\ Lummi.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    order: 1;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.email-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.labels{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    color: hsl(183, 100%, 15%);
+    margin-bottom: 1rem;
+    width: 100%;
+    font-weight: 700;
+}
+
+.error{
+    color: rgb(228, 25, 25);
+    color: rgba(228, 25, 25, 0.407);
+    display: none;
+}
+
+.email-section input{
+    width: 100%;
+    padding: 1.5rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    outline: none;
+}
+
+.subscribe{
+    width: 100%;
+    padding: 2rem ;
+    background-color: #232742;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe:hover{
+    background-color: #1d1f33;
+}
+
+
+.container-2{
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    width: 100%;
+    color: #252646;
+    border-radius: 2rem;
+    padding: 3.5rem;
+    align-self: center;
+}
+
+.container-2 h1{
+    margin-bottom: 2rem;
+}
+
+.container-2 h1 svg{
+    width: 50px;
+    height: 50px;
+}
+
+.thanks{
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.confirmation{
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+
+.dismiss{
+    width: 100%;
+    padding: 1.5rem ;
+    background-color: #232742;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+@media screen and (min-width: 768px){
+
+    body{
+        background-color: hsl(179, 81%, 29%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-1{
+        flex-direction: row;
+        width: 950px;
+        height: 65vh;
+        border-radius: 2rem;
+        padding: 3rem;
+        justify-content: center;
+    }
+
+    .container-1 .content{
+        width: 50%;
+        order: 1;
+    }
+    .container-1 .image{
+        width: 50%;
+        /* height: 100%; */
+        height: 100%;
+        border-radius: 2rem;
+    }
+
+    .content h1{
+        /* font-size: 5rem; */
+        margin-bottom: 2rem;
+    }
+    
+    .descripation{
+        font-size: 2rem;
+    }
+
+    .features p{
+       font-size: 1.7rem;
+    }
+    
+    .features p svg {
+        width: 27px;
+        height: 27px;
+    }
+    
+ 
+
+    .container-2{
+        width: 500px;
+        padding: 5rem;
+        /* display: flex; */
+    }
+
+    .container-2 h1 svg{
+        width: 70px;
+        height: 70px;
+    }
+
+    .thanks{
+        font-size: 5.5rem;
+    }
+
+    .confirmation{
+        font-size: 1.8rem;
+    }
+
+    .dismiss{
+        padding: 2rem ;
+        font-size: 1.7rem;
+    }
+}
